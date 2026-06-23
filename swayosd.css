@@ -4,14 +4,36 @@
 @define-color image #F8EBE3;
 @define-color progress #819890;
 
-/* ~/.config/swayosd/style.css @imports this file (border-radius:0 / opacity:0.97 / border:2px).
-   Override so the OSD matches hyprland: radius 4, 1px Ash-Gray border, translucent. */
-window {
-  border-radius: 4px !important;
-  border: 1px solid @border-color !important;
-  opacity: 1 !important;
+/* Cancel out Omarchy's default window styling (neutralize structural style.css) */
+window:not(:backdrop),
+window:backdrop {
+    border: none;
+    border-width: 0;
+    border-radius: 4px;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 12px;
 }
 
-progressbar {
-  border-radius: 4px !important;
+/* Draw the OSD box on the inner #container -> clean rounded corners (radius 4 = hyprland) + transparency */
+window:not(:backdrop) #container,
+window:backdrop #container {
+    border: 1px solid @border-color;
+    border-radius: 4px;
+    background-color: @background-color;
+    background-image: linear-gradient(to bottom, rgba(165, 181, 171, 0.05), transparent);
+    padding: 12px;
+    background-clip: padding-box;
+    box-shadow: 2px 2px 9px 0px rgba(10, 11, 6, 0.55);
+}
+
+/* Volume / brightness bar: subtle dark track + sage fill */
+progressbar trough {
+    background-color: rgba(39, 50, 54, 0.6);
+    border: 1px solid rgba(165, 181, 171, 0.22);
+    border-radius: 3px;
+}
+
+progress {
+    border-radius: 3px;
 }
