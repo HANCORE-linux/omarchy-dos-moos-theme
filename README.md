@@ -1,4 +1,4 @@
-# dos-moos
+# Dos-Moos
 
 A dark, moss-green aesthetic on a near-black canvas — muted sage tones, warm linen text, and a single neon-lime accent.
 Every color is tuned for WCAG-AA legibility, for a calm, focused terminal you can stare at day or night.
