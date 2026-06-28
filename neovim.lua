@@ -44,11 +44,17 @@ return {
         selection_background = "#131516",
       },
       on_highlights = function(hl, c)
-        hl.CursorLine = { bg = "#1C1C1A" }
+        hl.CursorLine = { bg = "#1F2629" }
         hl.CursorLineNr = { fg = c.yellow, bold = true }
         hl.LspReferenceText = { bg = c.selection, fg = c.bright_fg }
         hl.LspReferenceRead = hl.LspReferenceText
         hl.LspReferenceWrite = hl.LspReferenceText
+        -- Picker path/dir legible (was NonText #585858 ~2.6:1) -> Reseda, AA on bg & hover
+        hl.SnacksPickerDir         = { fg = c.muted }
+        hl.SnacksPickerPathHidden  = { fg = c.muted }
+        hl.SnacksPickerPathIgnored = { fg = c.muted }
+        -- Picker hover row (was Visual #4D5552). #1F2629 chosen for the look (dir-on-hover ~3.87:1, just under AA 4.5, >3:1). Strict-AA option was #0F1011 (4.80:1). Matches hl.CursorLine above.
+        hl.SnacksPickerListCursorLine = { bg = "#1F2629" }
       end,
     },
     config = function(_, opts)
