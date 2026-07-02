@@ -23,7 +23,7 @@ return {
         orange     = "#E0C15C",   -- numbers / constants (deep Arylide)
         yellow     = "#F4E276",   -- keywords / types (Arylide)
         green      = "#B8CE76",   -- strings (soft lime)
-        cyan       = "#819890",   -- members / fields (Cambridge)
+        cyan       = "#6d877d",   -- members / fields (Cambridge)
         blue       = "#A5B5AB",   -- functions / methods (Ash Gray)
         purple     = "#8FB87A",   -- control keywords (sage green)
         brown      = "#72856C",   -- deprecated / special (Reseda)
@@ -31,7 +31,7 @@ return {
         bright_red    = "#F0334A",
         bright_yellow = "#F4E276",
         bright_green  = "#B8CE76",
-        bright_cyan   = "#819890",
+        bright_cyan   = "#6d877d",
         bright_blue   = "#A5B5AB",
         bright_purple = "#8FB87A",
 

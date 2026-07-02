@@ -6,15 +6,15 @@
     @define-color yellow         #F4E276;
     @define-color blue           #A5B5AB;
     @define-color magenta        #72856C;
-    @define-color cyan           #819890;
-    @define-color white          #A5B5AB;
+    @define-color cyan           #6d877d;
+    @define-color white          #d5dbd7;
     @define-color bright_black   #3A4849;
     @define-color bright_red     #F0334A;
-    @define-color bright_green   #A5B5AB;
+    @define-color bright_green   #819890;
     @define-color bright_yellow  #F4E276;
     @define-color bright_blue    #A5B5AB;
-    @define-color bright_magenta #819890;
-    @define-color bright_cyan    #A5B5AB;
+    @define-color bright_magenta #72856C;
+    @define-color bright_cyan    #6d877d;
     @define-color bright_white   #F8EBE3;
 
     @define-color accent_bg_color @blue;
