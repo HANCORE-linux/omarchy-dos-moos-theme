@@ -8,7 +8,7 @@ return {
       transparent = false,
       colors = {
         bg         = "#131516",
-        dark_bg    = "#1C1C1A",
+        dark_bg    = "#131516",
         darker_bg  = "#0F1011",
         lighter_bg = "#273236",
 
